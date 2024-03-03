@@ -7,11 +7,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Christopher Whelan Art</title>
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar">
+            <a class="title" href="/">Christopher Whelan</a>
+            <div class="menu">
+                <img class="menuBtn" src="./assets/nav/menuIcon.png" alt="menu-button" onclick="toggleMenu()">
+                <ul class="menuItems">
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="hero"></section>
@@ -20,4 +34,10 @@
     </main>
     <footer></footer>
 </body>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.menuItems');
+        menu.classList.toggle('menuOpen');
+    }
+</script>
 </html>
