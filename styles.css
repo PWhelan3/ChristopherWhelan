@@ -143,12 +143,12 @@ html {
   .topBlur,
   .bottomBlur {
     position: absolute;
-    width: 50vw;
-    height: 50vw;
-    min-width: 350px;
-    min-height: 350px;
-    border-radius: 764px;
-    filter: blur(200px); 
+    width: 45vw;
+    height: 45vw;
+    /* min-width: 350px;
+    min-height: 350px; */
+    border-radius: 50%;
+    filter: blur(100px); 
     z-index: 0; 
   }
   
